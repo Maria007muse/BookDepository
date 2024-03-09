@@ -7,9 +7,11 @@ class Book {
         private set
     var title = ""
     var date: Date
+    var time: Date
     var isReaded = false
     init {
         id = UUID.randomUUID()
         date = Date()
+        time=Date()
     }
 }

@@ -65,10 +65,10 @@ class BookListFragment : Fragment() {
 
         override fun onClick(v: View?) {
             val context = v!!.context
-            val intent = BookActivity.newIntent(context, book.id)
+            book.isReaded = v.findViewById<CheckBox>(R.id.list_item_book_readed_check_box).isChecked
+            val intent = BookPagerActivity.newIntent(context, book.id)
             context.startActivity(intent)
         }
-
     }
 
     private class BookAdapter(books: List<Book>?) :

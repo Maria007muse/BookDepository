@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".BookActivity"
+            android:name=".BookPagerActivity"
             android:exported="true"
             android:label="@string/app_name">
         </activity>
